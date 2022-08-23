@@ -1,0 +1,257 @@
+/* General CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-size: 17px;
+}
+
+/* Hero Area */
+.hero_area {
+  min-height: 70vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(66, 66, 66, 0.52),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url("./assets/images/donation6.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.hero_area_content {
+  margin: 0px auto;
+  height: 80vh;
+  width: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.hero_area h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.hero_area a,
+.donate_input_area a {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: #fcb900;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.hero_area a:hover,
+.donate_input_area a:hover {
+  background-color: #fcb900e7;
+  transform: scale(1.1);
+}
+
+/* Dontate Option CSS */
+.donate_option {
+  padding-top: 100px;
+}
+.donate_option_content {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  /* padding: 0 350px; */
+}
+.donate_option_content h2,
+.donate_plan_content h2,
+.reach_area_left_content h2,
+.donate_subscription_content h2,
+.footer_content h2 {
+  color: #fcb900;
+  font-size: 40px;
+}
+.donate_option_content p {
+  color: #707070;
+  margin: 40px 0;
+}
+.donate_opion_amounts {
+  margin: 20px auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.donate_amount {
+  padding: 40px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  color: #707070;
+}
+
+.active {
+  background-color: #fddb7e3b;
+  border: 2px solid #fcb900;
+  color: #fcb900;
+}
+.donate_input_area {
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+.donate_input_area input {
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #dadada;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+
+/* Donate Plan CSS */
+.donate_plan {
+  padding-top: 100px;
+  margin: 0 auto;
+}
+.donate_plan_content {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+.donate_plan_content p {
+  color: #707070;
+  margin-top: 20px;
+}
+.donate_plans {
+  margin: 40px auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.donate_plans h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.single_donate_plan {
+  padding: 50px;
+  border-radius: 5px;
+  width: 32%;
+}
+.single_donate_plan img {
+  width: 100px;
+}
+.single_donate_plan:nth-child(1) {
+  background-color: rgba(79, 157, 166, 0.1);
+}
+.single_donate_plan:nth-child(2) {
+  background-color: rgba(255, 89, 89, 0.1);
+}
+.single_donate_plan:nth-child(3) {
+  background-color: #fff4d6;
+}
+
+/* Reach Area CSS */
+.reach_area {
+  background-color: #ededed4f;
+  margin-top: 100px;
+  display: flex;
+}
+.reach_area_left {
+  width: 45%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.single_count h2 {
+  font-size: 60px;
+}
+.single_count span {
+  color: #6b6b6b;
+}
+.single_count:nth-child(1) {
+  color: #4054b2;
+}
+.single_count:nth-child(2) {
+  color: #bf2222;
+}
+.single_count:nth-child(3) {
+  color: #23a455;
+}
+.reach_area_left_count {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.reach_area_right {
+  width: 45%;
+  padding: 100px;
+  text-align: center;
+}
+.reach_area_right img {
+  width: 80%;
+}
+
+/* Subcription Area CSS */
+.donate_subscription {
+  padding-top: 100px;
+}
+.donate_subscription_content {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+.donate_subscription_content p {
+  padding-top: 20px;
+}
+.donate_subscription_mail {
+  padding: 100px;
+  margin: 40px auto;
+  width: 60%;
+  text-align: center;
+  background: #e9b1176e;
+}
+.donate_subscription_mail input {
+  font-size: 18px;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  text-transform: capitalize;
+}
+.donate_subscription_mail input[type="text"] {
+  border-radius: 5px 0 0 5px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.donate_subscription_mail input[type="submit"] {
+  border-radius: 0 5px 5px 0;
+  background-color: #fcb900;
+  padding: 10px 15px;
+  margin-left: -5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Footer area css */
+footer {
+  margin-top: 100px;
+  background-color: #0b0d17;
+  color: #fff;
+  text-align: center;
+}
+.footer_content {
+  padding: 50px;
+}
+.footer_content p {
+  margin-top: 20px;
+}
